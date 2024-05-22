@@ -14,10 +14,18 @@ const products = [
   { product: 'tea', price: '' },
 ]
 
-// Log each name with matching province
+// Iterates through names and province objects
 console.log('Names and Provinces:')
 names.forEach(name => console.log(name));
 provinces.forEach(province => console.log(province));
 
 console.log('Names with matching provinces:')
 names.forEach((name, index) => console.log(`${name} (${provinces[index]})`));
+
+// Creates a new array of provinces
+const provincesUpperCase = provinces.map(province => province.toUpperCase());
+console.log('Uppercase Provinces:', provincesUpperCase);
+
+// Creates a new array for length of names
+const nameLengths = names.map(name => name.length);
+console.log('Name Lengths:', nameLengths);
