@@ -29,3 +29,7 @@ console.log('Uppercase Provinces:', provincesUpperCase);
 // Creates a new array for length of names
 const nameLengths = names.map(name => name.length);
 console.log('Name Lengths:', nameLengths);
+
+// Sorts provinces in lexicographical odrder
+provinces.sort( );
+console.log('Sorted Provinces:', provinces);
