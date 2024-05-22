@@ -4,15 +4,6 @@ const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', '
 // A list of names:
 const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie']
 
-// A list of products with prices:
-const products = [
-  { product: 'banana', price: "2" },
-  { product: 'mango', price: 6 },
-  { product: 'potato', price: ' ' },
-  { product: 'avocado', price: "8" },
-  { product: 'coffee', price: 10 },
-  { product: 'tea', price: '' },
-]
 
 // Iterates through names and province objects
 console.log('Names and Provinces:')
@@ -33,3 +24,14 @@ console.log('Name Lengths:', nameLengths);
 // Sorts provinces in lexicographical odrder
 provinces.sort( );
 console.log('Sorted Provinces:', provinces);
+
+
+// A list of products with prices:
+const products = [
+  { product: 'banana', price: "2" },
+  { product: 'mango', price: 6 },
+  { product: 'potato', price: ' ' },
+  { product: 'avocado', price: "8" },
+  { product: 'coffee', price: 10 },
+  { product: 'tea', price: '' },
+]
