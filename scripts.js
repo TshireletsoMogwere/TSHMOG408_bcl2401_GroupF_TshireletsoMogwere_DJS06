@@ -67,3 +67,9 @@ console.log((() => {
   const lowest = pricedProducts.reduce((lowest, products) => products.price < lowest.price ? products : lowest, pricedProducts[0]);
   return `Highest: ${highest.product}. Lowest: ${lowest.product}.`;
 })());
+
+// Iterates over products array to transform each product to an object
+console.log(products.reduce((acc, products) => {
+  acc.push({name: products.product, cost: products.price});
+  return acc;
+}, []));
