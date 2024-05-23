@@ -25,6 +25,10 @@ console.log('Name Lengths:', nameLengths);
 provinces.sort( );
 console.log('Sorted Provinces:', provinces);
 
+// Creates new array passing test implemented by function
+const filteredProvinces = provinces.filter(province => !province.includes('Cape'));
+console.log('Remaining provinces:', filteredProvinces.length, filteredProvinces);
+
 
 // A list of products with prices:
 const products = [
