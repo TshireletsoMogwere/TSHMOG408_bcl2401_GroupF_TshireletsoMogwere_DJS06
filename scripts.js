@@ -33,6 +33,16 @@ console.log('Remaining provinces:', filteredProvinces.length, filteredProvinces)
 const hasS = names.map(name => name.split('').some(char => char.toLowerCase() === 's'));
 console.log(hasS);
 
+// Creates an array object
+const namesAndProvinces = names.reduce((accumulator, name, index) => {
+  accumulator[name] = provinces[index];
+  return accumulator;
+}, {});
+
+console.log(namesAndProvinces);
+
+
+
 
 // A list of products with prices:
 const products = [
