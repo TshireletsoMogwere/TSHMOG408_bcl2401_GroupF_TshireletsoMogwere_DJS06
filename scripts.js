@@ -58,4 +58,12 @@ console.log(products.forEach(products => console.log(products.product)));
 console.log(products.filter(products => products.product.length <= 5));
 
 // Filter out priceless products
-console.log(products.filter(products => products.price !== ' ' && products.price !== ' ').map(products => ({...products, price: Number(products.price)})).reduce((total, products) => total + products.price, 0));
+console.log(products.filter(products => products.price !== '' && products.price !== ' ').map(products => ({...products, price: Number(products.price)})).reduce((total, products) => total + products.price, 0));
+
+// Finds highest and lowest priced Items
+console.log((() => {
+  const pricedProducts = products.filter(products => products.price !== '' && products.price !== ' ').map(products => ({ ...products, price: Number(products.price)}));
+  const highest = pricedProducts.reduce((highest, products) => products.price > highest.price ? products : highest, pricedProducts[0]);
+  const lowest = pricedProducts.reduce((lowest, products) => products.price < lowest.price ? products : lowest, pricedProducts[0]);
+  return `Highest: ${highest.product}. Lowest: ${lowest.product}.`;
+})());
