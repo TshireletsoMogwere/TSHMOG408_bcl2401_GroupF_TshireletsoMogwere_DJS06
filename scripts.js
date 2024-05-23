@@ -56,3 +56,6 @@ console.log(products.forEach(products => console.log(products.product)));
 
 // Filters name's length
 console.log(products.filter(products => products.product.length <= 5));
+
+// Filter out priceless products
+console.log(products.filter(products => products.price !== ' ' && products.price !== ' ').map(products => ({...products, price: Number(products.price)})).reduce((total, products) => total + products.price, 0));
