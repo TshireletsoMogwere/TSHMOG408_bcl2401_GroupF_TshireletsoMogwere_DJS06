@@ -41,9 +41,6 @@ const namesAndProvinces = names.reduce((accumulator, name, index) => {
 
 console.log(namesAndProvinces);
 
-
-
-
 // A list of products with prices:
 const products = [
   { product: 'banana', price: "2" },
@@ -53,3 +50,6 @@ const products = [
   { product: 'coffee', price: 10 },
   { product: 'tea', price: '' },
 ]
+
+// Logs each product name
+console.log(products.forEach(products => console.log(products.product)));
