@@ -29,6 +29,10 @@ console.log('Sorted Provinces:', provinces);
 const filteredProvinces = provinces.filter(province => !province.includes('Cape'));
 console.log('Remaining provinces:', filteredProvinces.length, filteredProvinces);
 
+// Creates a boolean array
+const hasS = names.map(name => name.split('').some(char => char.toLowerCase() === 's'));
+console.log(hasS);
+
 
 // A list of products with prices:
 const products = [
